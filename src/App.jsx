@@ -3,6 +3,7 @@ import foods from './foods.json';
 import './App.css';
 import FoodBox from './components/FoodBox';
 import 'bulma/css/bulma.css';
+import AddFoodForm from './components/AddFoodForm';
 
 function App(props) {
   return (
@@ -14,6 +15,7 @@ function App(props) {
       {foods.map((food) => {
         return <FoodBox food={food} />;
       })}
+      <AddFoodForm></AddFoodForm>
     </div>
   );
 }
